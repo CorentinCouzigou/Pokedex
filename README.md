@@ -7,4 +7,4 @@ Technologies:Node.js /Express / Sequelize / ejs / dotenv
 
 ![](onePokemon.png "Pokedex details page")
 
-![](types.png"Pokedex types page")
+![](types.png "Pokedex types page")
