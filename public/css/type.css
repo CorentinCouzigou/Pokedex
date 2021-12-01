@@ -8,6 +8,12 @@
   color: white;
   padding: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .type__text {
+    font-size: 0.5rem;
+  }
+}
+
 .type__container {
   margin-top: 1rem;
   width: 100%;

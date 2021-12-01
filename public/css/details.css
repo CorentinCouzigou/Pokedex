@@ -1,6 +1,7 @@
 .details__SuperContainer {
   width: 100%;
   height: 100vh;
+  border-style: inset;
 }
 .details__container__type {
   margin: 1rem 0rem;
@@ -12,6 +13,12 @@
   cursor: pointer;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .details__types {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
 .details__pokemon__container {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +28,14 @@
 .details__pokemon__card {
 }
 .details__pokemon__card__img {
+}
+@media screen and (max-width: 768px) {
+  .details__pokemon__card__img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .details__container__stats {
   width: 50vw;
@@ -32,16 +47,31 @@
   padding: 1rem;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .details__container__stats {
+    margin-top: 1rem;
+    width: 80%;
+    height: 60vh;
+    display: block;
+    margin: 0 auto;
+  }
+}
 .wrapper__stats {
   display: flex;
   flex-direction: column;
   margin: 1rem 0rem;
 }
+
 .stat {
   display: flex;
   justify-content: space-between;
   height: 1.5rem;
   padding: 0.2rem 0rem;
+}
+@media screen and (max-width: 768px) {
+  .stat {
+    font-size: 0.6rem;
+  }
 }
 .stat__text {
   color: white;
@@ -49,6 +79,11 @@
   font-weight: bold;
   color: white;
   /* margin-right: 1rem; */
+}
+@media screen and (max-width: 768px) {
+  .stat__text {
+    font-size: 0.6rem;
+  }
 }
 .stat__progress {
   width: 35%;
@@ -59,13 +94,32 @@ h2 {
   font-size: 3rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-top: 4rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 h3 {
   color: white;
   font-size: 1.6rem;
   padding: none;
 }
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
 h4 {
   color: white;
   font-size: 1.5rem;
   padding: 0.2rem 0rem;
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1rem;
+  }
 }

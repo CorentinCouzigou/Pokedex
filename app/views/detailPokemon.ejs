@@ -1,7 +1,7 @@
 <%- include('partials/header') %>
+
 <div class="details__SuperContainer">
   <h2>Détails de <%= onePokemon.nom %></h2>
-
   <div class="details__pokemon__container">
     <div class="details__pokemon__card">
       <figure>
@@ -36,7 +36,6 @@
             value="<%= onePokemon.pv %>"
           ></progress>
         </div>
-
         <div class="stat">
           <label for="Attaque">Attaque</label>
           <span class="stat__text"><%= onePokemon.attaque %></span>
@@ -47,7 +46,6 @@
             value="<%= onePokemon.attaque %>"
           ></progress>
         </div>
-
         <div class="stat">
           <label for="Défense">Défense</label>
           <span class="stat__text"><%= onePokemon.defense %></span>
@@ -58,7 +56,6 @@
             value="<%= onePokemon.defense %>"
           ></progress>
         </div>
-
         <div class="stat">
           <label for="Attaque Spé">Attaque Spé.</label>
           <span class="stat__text"><%= onePokemon.attaque_spe %></span>
@@ -69,7 +66,6 @@
             value="<%= onePokemon.attaque_spe %>"
           ></progress>
         </div>
-
         <div class="stat">
           <label for="Défense Spé.">Défense Spé.</label>
           <span class="stat__text"><%= onePokemon.defense_spe %></span>
@@ -80,7 +76,6 @@
             value="<%= onePokemon.defense_spe %>"
           ></progress>
         </div>
-
         <div class="stat">
           <label for="Vitesse">Vitesse</label>
           <span class="stat__text"><%= onePokemon.vitesse %></span>

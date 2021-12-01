@@ -13,6 +13,13 @@
   background-color: white;
   box-shadow: 5px 5px 5px 5px #982c2c;
 }
+@media screen and (max-width: 820px) {
+  .header__container {
+    width: 75%;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}
 
 .header__title {
   font-weight: bold;
@@ -22,11 +29,11 @@
 .header__title__link {
   text-decoration: none;
 }
+
 .header__nav {
   display: flex;
   font-size: 0.8rem;
 }
-
 .header__nav__link {
   margin-left: 0.5rem;
   text-decoration: none;
@@ -34,4 +41,9 @@
 }
 .header__nav__link:hover {
   color: #982c2c;
+}
+@media screen and (max-width: 820px) {
+  .header__nav__link {
+    font-size: 0.6rem;
+  }
 }
