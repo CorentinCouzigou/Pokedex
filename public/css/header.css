@@ -1,0 +1,37 @@
+.header__container {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 1;
+  padding: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px #982c2c;
+}
+
+.header__title {
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+}
+.header__title__link {
+  text-decoration: none;
+}
+.header__nav {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.header__nav__link {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__nav__link:hover {
+  color: #982c2c;
+}

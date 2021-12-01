@@ -1,0 +1,31 @@
+.getOneType__container {
+  margin-top: 5rem;
+  width: 90%;
+  max-height: 100vh;
+  overflow: auto;
+}
+.oneType__link {
+  text-decoration: none;
+  color: white;
+}
+.details__types__button {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px 2px black;
+  text-decoration: none;
+}
+ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+li {
+  padding: 1rem;
+}

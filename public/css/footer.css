@@ -1,0 +1,13 @@
+.footer__container {
+  width: 100vw;
+  height: 5vh;
+  background-color: #982c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(1rem);
+}
+.footer__paragraphe {
+  color: white;
+  font-size: 0.7rem;
+}

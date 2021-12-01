@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<div class="getOneType__container">
+  <ul>
+    <% for (let pokemon of allPokemons){ %>
+    <li>
+      <% for (let type of pokemon.types) { %>
+        <a class="oneType__link" href="/type/<%= type.id %>">
+        <button
+        class="details__types__button"
+        style="background-color: #<%= type.color %>"
+      >
+        </a>
+      </button> </a>
+      <% } %>
+      <a class="oneType__link" href="/pokemon/<%= pokemon.id %>"
+        ><%= pokemon.nom %>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+</div>
+
+<%- include('partials/footer') %>

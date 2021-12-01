@@ -1,0 +1,99 @@
+<%- include('partials/header') %>
+<div class="details__SuperContainer">
+  <h2>Détails de <%= onePokemon.nom %></h2>
+
+  <div class="details__pokemon__container">
+    <div class="details__pokemon__card">
+      <figure>
+        <img
+          class="details__pokemon__card__img"
+          src="/img/<%= onePokemon.numero %>.png"
+          alt="image de <%= onePokemon.nom%>"
+        />
+      </figure>
+    </div>
+    <div class="details__container__stats">
+      <h3>#<%= onePokemon.numero %> <%= onePokemon.nom %></h3>
+      <div class="details__container__type">
+        <% for (let type of onePokemon.types) { %>
+        <a
+          href="/type/<%= type.id %>"
+          class="details__types"
+          style="background-color: #<%= type.color %>"
+          ><%= type.name%></a
+        >
+        <% } %>
+      </div>
+      <h4>Statistiques</h4>
+      <div class="wrapper__stats">
+        <div class="stat">
+          <label for="PV">PV</label>
+          <span class="stat__text"><%= onePokemon.pv %></span>
+          <progress
+            class="stat__progress"
+            id="PV"
+            max="255"
+            value="<%= onePokemon.pv %>"
+          ></progress>
+        </div>
+
+        <div class="stat">
+          <label for="Attaque">Attaque</label>
+          <span class="stat__text"><%= onePokemon.attaque %></span>
+          <progress
+            class="stat__progress"
+            id="Attaque"
+            max="255"
+            value="<%= onePokemon.attaque %>"
+          ></progress>
+        </div>
+
+        <div class="stat">
+          <label for="Défense">Défense</label>
+          <span class="stat__text"><%= onePokemon.defense %></span>
+          <progress
+            class="stat__progress"
+            id="Défense"
+            max="255"
+            value="<%= onePokemon.defense %>"
+          ></progress>
+        </div>
+
+        <div class="stat">
+          <label for="Attaque Spé">Attaque Spé.</label>
+          <span class="stat__text"><%= onePokemon.attaque_spe %></span>
+          <progress
+            class="stat__progress"
+            id="Attaque Spé"
+            max="255"
+            value="<%= onePokemon.attaque_spe %>"
+          ></progress>
+        </div>
+
+        <div class="stat">
+          <label for="Défense Spé.">Défense Spé.</label>
+          <span class="stat__text"><%= onePokemon.defense_spe %></span>
+          <progress
+            class="stat__progress"
+            id="Défense Spé."
+            max="255"
+            value="<%= onePokemon.defense_spe %>"
+          ></progress>
+        </div>
+
+        <div class="stat">
+          <label for="Vitesse">Vitesse</label>
+          <span class="stat__text"><%= onePokemon.vitesse %></span>
+          <progress
+            class="stat__progress"
+            id="Vitesse"
+            max="255"
+            value="<%= onePokemon.vitesse %>"
+          ></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<div class="type__superContainer">
+  <span class="type__text"
+    >Cliquez sur une type pour voir tous les Pokémons associés à ce type
+  </span>
+
+  <div class="type__container">
+    <% for (let type of allTypes ){ %>
+    <a class="type__link" href="/type/<%= type.id %>">
+      <div class="type" style="background-color: #<%= type.color %>">
+        <%= type.name %>
+      </div></a
+    >
+    <% } %>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
