@@ -6,7 +6,7 @@ const mainController = {
       const allPokemons = await Pokemon.findAll();
       res.render('index.ejs', { allPokemons });
     } catch (e) {
-      console.log(e)
+      console.error(e)
       res.status(500).send('Erreur ! ');
     }
   },
@@ -19,10 +19,9 @@ const mainController = {
           association: "types",
         }]
       });
-      console.log(getOnePokemon)
       res.render('detailPokemon', { onePokemon: getOnePokemon })
     } catch (e) {
-      console.log(e)
+      console.error(e)
       res.status(500).send('Erreur ! ');
     }
   },
@@ -32,7 +31,7 @@ const mainController = {
       const getAllTypes = await Type.findAll();
       res.render('type', { allTypes: getAllTypes })
     } catch (e) {
-      console.log(e)
+      console.error(e)
       res.status(500).send('Erreur ! ');
     }
   },
@@ -48,10 +47,9 @@ const mainController = {
           }]
         }]
       })
-      console.log('getPokemonsWithOneType', getPokemonsWithOneType.pokemons[0].types)
       res.render('oneType', { allPokemons: getPokemonsWithOneType.pokemons })
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   }
 };

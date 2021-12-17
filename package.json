@@ -1,0 +1,29 @@
+{
+  "name": "pokedex-corentincouzigou",
+  "version": "1.0.0",
+  "description": "Serveur node.js avec gestion d'un fichier SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorentinCouzigou/S4--Pok-dex--DB-Serveur-Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorentinCouzigou/S4--Pok-dex--DB-Serveur-Node/issues"
+  },
+  "homepage": "https://github.com/CorentinCouzigou/S4--Pok-dex--DB-Serveur-Node#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.0-alpha.1"
+  }
+}
