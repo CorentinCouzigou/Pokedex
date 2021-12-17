@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const router = require('./app/router');
 const PORT = process.env.PORT || 3000;
+const sanitizer = require('sanitizer');
 const expressSession = require('express-session');
 // 
 
@@ -16,6 +17,13 @@ const expressSession = require('express-session');
 //     next();
 //   });
 app.use(express.urlencoded({ extended: true }));
+app.use((req, res, next) => {
+  for (const key in req.body) {
+    req.body[key] = sanitizer.escape(req.body[key]);
+  }
+  next();
+});
+
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
 app.use(express.static('public'));
