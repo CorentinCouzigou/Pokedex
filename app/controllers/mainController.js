@@ -7,7 +7,7 @@ const mainController = {
       res.render('index.ejs', { allPokemons });
     } catch (e) {
       console.error(e)
-      res.status(500).send('Erreur ! ');
+      res.status(500).send('Erreur enrigistrement page d\'accueil ! ');
     }
   },
 
